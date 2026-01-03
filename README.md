@@ -1,4 +1,4 @@
-# Contract LLM Creator (Offline)
+# Contract LLM Generator (Offline)
 
 Offline system for analysis, structuring and generation of contract documents using local Large Language Models (LLMs).
 
