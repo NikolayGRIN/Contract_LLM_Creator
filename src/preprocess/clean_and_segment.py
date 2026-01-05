@@ -139,27 +139,37 @@ def looks_like_real_title(line: str) -> bool:
         return True
     return False
 
+NON_SECTION_CAPS = {
+    "BUYER", "SELLER", "ПОКУПАТЕЛЬ", "ПОСТАВЩИК", "ПРОДАВЕЦ",
+    "CONTRACT", "КОНТРАКТ",
+    "CONTRACT №", "КОНТРАКТ №",
+    "EXAMPLE", "EXAMPLE:",
+}
+
 
 def is_all_caps_heading(line: str) -> bool:
-    """
-    Detect headings like:
-    'GENERAL TERMS AND CONDITIONS OF CONTRACT'
-    Works for EN and also RU upper-case.
-    """
     s = normalize_spaces(line)
     if not s:
         return False
+
+    # исключаем титульные поля
+    for bad in NON_SECTION_CAPS:
+        if s.startswith(bad):
+            return False
+
+    # не считаем строки в скобках заголовками
+    if s.startswith("(") and s.endswith(")"):
+        return False
+
     if len(s) > ALL_CAPS_MAX_LEN:
         return False
 
-    # must contain enough letters
     letters = re.findall(r"[A-Za-zА-ЯЁа-яё]", s)
     if len(letters) < ALL_CAPS_MIN_ALPHA:
         return False
 
-    # "isupper" works with Cyrillic too; but allow digits/punctuations
-    # We check: all letters are upper-case.
     return all(ch.isupper() for ch in letters)
+
 
 
 def is_heading(line: str, *, allow_all_caps: bool = True) -> bool:
@@ -225,7 +235,7 @@ def split_into_sections(text: str):
             continue
 
         # Normal heading start
-        if is_heading(line, allow_all_caps=True):
+        if is_heading(line, allow_all_caps=(current_title == "PREFACE")):
             if current_body:
                 sections.append({"section": current_title, "text": "\n".join(current_body).strip()})
             current_title = line
