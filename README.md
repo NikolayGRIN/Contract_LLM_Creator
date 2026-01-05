@@ -1,61 +1,143 @@
-# Contract LLM Generator (Offline)
+Contract LLM Creator (Offline)
 
-Offline system for analysis, structuring and generation of contract documents using local Large Language Models (LLMs).
+Оффлайн-система для анализа, структурирования и генерации договорных документов с использованием локальных Large Language Models (LLM).
 
-## Project goal
-The goal of the project is to develop an **offline pipeline** that:
-- preprocesses and analyzes real contract documents,
-- extracts and structures their logical sections,
-- and **generates new contracts on demand** based on user requirements, including **bilingual (RU / EN) output**.
+Общее описание проекта
 
-The system is designed to operate **without Internet access and cloud-based LLMs**, which is critical for working with confidential contractual data.
+Contract LLM Creator — это offline-first NLP-пайплайн для работы с реальными контрактами и договорно-правовыми документами.
+Система предназначена для предобработки, структурного анализа и последующей генерации договоров без использования облачных сервисов и внешних API, что критически важно при работе с данными, составляющими коммерческую тайну юридического лица.
 
-## Key functionalities
+Проект ориентирован на практическую юридическую NLP-задачу: сегментацию договоров на логические разделы (clauses), корпусный анализ структуры контрактов и контролируемую генерацию договоров на основе реальной контрактной практики.
 
-### 1. Contract preprocessing and analysis (implemented)
-- Extraction of text from DOCX files (including tables)
-- Cleaning and normalization of contractual text
-- Segmentation of contracts into logical sections
-- Corpus-level quality analysis of segmentation results
+Цели проекта
 
-### 2. Knowledge base from real contracts (implemented)
-- Conversion of contracts into a structured JSON format
-- Preservation of document structure and metadata
-- Preparation of a local corpus for further retrieval and generation
+Основная цель — разработка сквозного оффлайн-пайплайна, который:
 
-### 3. Contract generation using local LLMs (planned / in progress)
-- Generation of contracts by user request (e.g. equipment supply, works or services contracts)
-- Support for Russian and English languages
-- Ability to generate contracts directly in English or as bilingual (RU / EN) documents
-- Reuse of real contractual formulations from the local corpus
-- Offline operation using local LLM inference
+обрабатывает и анализирует реальные контрактно-договорные документы,
 
-### 4. Quality control and consistency checks (planned)
-- Verification of mandatory contract sections
-- Terminology consistency (Buyer / Seller, Contractor / Customer, etc.)
-- Validation of dates, amounts, currencies and delivery terms
-- Cross-language consistency for bilingual contracts
+выделяет и структурирует их логические разделы,
 
-## Project structure
+формирует локальный корпус контрактов,
 
-src/
-preprocess/ # text cleaning, segmentation, quality analysis
-retrieval/ # search and retrieval of relevant contract fragments (planned)
-generation/ # contract generation using local LLMs (planned)
-export/ # DOCX generation and formatting (planned)
+и генерирует новые контракты и договоры по запросу пользователя на основе заданных параметров.
 
-## Offline-first approach
-All stages of the pipeline are designed to work **fully offline**:
-- no cloud APIs,
-- no external LLM services,
-- all models and data are stored locally.
+Планируемые сценарии генерации включают:
 
-This approach ensures data confidentiality and reproducibility of results.
+договоры поставки товаров (в том числе промышленного оборудования),
 
-## Academic context
-The project is developed as a graduation (thesis) project and focuses on:
-- practical NLP processing of legal documents,
-- heuristic and corpus-based segmentation methods,
-- application of local LLMs for controlled text generation in the legal domain.
+опциональное выполнение работ (монтаж, пуско-наладка),
 
+опциональное оказание услуг (обучение, сопровождение),
 
+поддержку русского, английского и двуязычного (RU / EN) форматов договоров.
+
+Основной функционал
+
+1. Предобработка и сегментация контрактов (реализовано)
+
+Извлечение текста из DOCX-файлов (включая таблицы)
+
+Очистка и нормализация договорного текста
+
+Сегментация документов на логические разделы
+
+Сопоставление заголовков с унифицированной типологией клауз
+
+Корпусный анализ качества сегментации
+
+2. Локальный корпус договоров (реализовано)
+
+Преобразование контрактов в структурированные форматы (segments.csv, segmented_contracts.jsonl)
+
+Сохранение порядка разделов и метаданных
+
+Поддержка статистического и покрывного (coverage) анализа корпуса
+
+Разделение физических документов и логических контрактных структур
+
+3. Генерация договоров с использованием локальных LLM (планируется / в разработке)
+
+Генерация договоров по пользовательскому запросу (например, договор поставки оборудования)
+
+Параметризуемая генерация (страна контрагента, язык, валюта, базис и срок поставки, состав работ/услуг)
+
+Поддержка русского и английского языков
+
+Генерация двуязычных договоров (RU / EN)
+
+Переиспользование формулировок и структуры из локального корпуса
+
+Полностью оффлайн-инференс с использованием локальных LLM
+
+4. Контроль качества и консистентности (планируется)
+
+Проверка наличия обязательных разделов договора
+
+Контроль терминологической согласованности (Покупатель / Продавец, Заказчик / Подрядчик и т.д.)
+
+Проверка дат, сумм, валют и условий поставки
+
+Кросс-языковая согласованность для двуязычных договоров
+
+Данные и описание корпуса
+
+Проект разрабатывается на основе закрытого корпуса реальных договоров.
+
+Всего DOCX-документов: 122
+
+JSON-версии: 122 (полный текст, без структурной сегментации)
+
+Исходные документы не публикуются в репозитории по причинам конфиденциальности.
+
+Результаты сегментации
+
+data/segments.csv — таблица сегментов договоров
+
+data/segments_report.csv — отчёт о качестве сегментации
+
+Пример аудита корпуса:
+
+ok (успешно сегментированы): 100 DOCX
+
+zero_segments (заголовки не обнаружены): 22 DOCX
+
+unsupported_json_structure: 122 JSON (сырые тексты)
+
+Логические контракты и двуязычные документы
+
+Часть DOCX-файлов содержит двуязычные договоры (русский + английский в одном документе).
+В таких случаях один физический файл включает несколько логических договорных структур, в результате чего 122 DOCX-файла дают 127 логических контрактов.
+
+Каждая языковая версия рассматривается как отдельный логический контракт
+
+Это решение является позволяет анализировать структуру корпуса, не смешивать языки, корректно генерировать одноязычные и двуязычные договоры.
+
+Offline подход
+
+Все этапы пайплайна проектируются как полностью оффлайн-решение:
+
+отсутствие облачных API,
+
+отсутствие внешних LLM-сервисов,
+
+локальное хранение моделей, данных и результатов.
+
+Это обеспечивает:
+
+конфиденциальность договорных данных,
+
+воспроизводимость результатов,
+
+применимость в корпоративной и юридической среде.
+
+Академический контекст
+
+Проект разрабатывается в рамках выпускной квалификационной работы (ВКР) и ориентирован на:
+
+прикладную обработку юридических текстов,
+
+эвристические и корпусно-ориентированные методы сегментации договоров,
+
+использование локальных LLM для контролируемой генерации юридических документов,
+
+сближение реальной договорной практики и автоматизированного контрактного моделирования.

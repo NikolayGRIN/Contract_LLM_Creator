@@ -39,3 +39,26 @@ models/
 
 # Logs
 *.log
+
+# data (raw)
+data/contracts_docx/
+data/contracts_json/
+
+# extracted text / segments (contain contract content)
+data/segments.csv
+data/segments_*.csv
+data/segmented_contracts*.jsonl
+data/*_run_log*.txt
+
+# outputs
+out/
+
+
+# Reports and outputs (may contain sensitive metadata)
+data/segments_report.csv
+data/*_report.csv
+
+# Temporary / generated
+out/
+__pycache__/
+*.log
