@@ -1,0 +1,38 @@
+{
+  "contract_type": "supply",
+  "language_mode": "ru",
+  "currency": "RUB",
+
+  "payment": {
+    "payment_trigger": "invoice_date",
+    "payment_term_days": 30,
+    "prepayment_required": false,
+    "bank_details_included": false,
+    "withholding_allowed": false,
+    "suspension_right": true,
+    "bank_charges": "payer",
+    "vat_mode": "exclusive_if_any",
+    "late_payment_penalty_enabled": false
+  },
+
+  "delivery": {
+    "delivery_date_type": "within_days_from_effective",
+    "delivery_within_days": 30,
+    "delivery_place": "Склад Покупателя",
+    "partial_shipments_allowed": true,
+    "acceptance_required": true,
+    "acceptance_period_days": 5,
+    "acceptance_document": "act",
+    "acceptance_rules": "mixed"
+  },
+
+  "liability": {
+    "liability_cap_enabled": true,
+    "liability_cap_type": "contract_price",
+    "cap_scope": "aggregate",
+    "indirect_damages_excluded": true,
+    "exceptions_to_cap": ["fraud", "wilful_misconduct"],
+    "delay_in_delivery_penalty_enabled": false,
+    "claim_notice_days": 30
+  }
+}

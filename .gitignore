@@ -1,6 +1,5 @@
 # Python
 __pycache__/
-*.py[cod]
 *.pyo
 *.pyd
 *.egg-info/
@@ -24,13 +23,6 @@ env/
 .DS_Store
 Thumbs.db
 
-# Data (confidential)
-data/raw/
-data/processed/
-*.doc
-*.docx
-*.pdf
-
 # Models (large)
 models/
 *.gguf
@@ -39,24 +31,6 @@ models/
 
 # Logs
 *.log
-
-# data (raw)
-data/contracts_docx/
-data/contracts_json/
-
-# extracted text / segments (contain contract content)
-data/segments.csv
-data/segments_*.csv
-data/segmented_contracts*.jsonl
-data/*_run_log*.txt
-
-# outputs
-out/
-
-
-# Reports and outputs (may contain sensitive metadata)
-data/segments_report.csv
-data/*_report.csv
 
 # Temporary / generated
 out/

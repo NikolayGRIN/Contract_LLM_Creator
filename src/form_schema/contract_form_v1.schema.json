@@ -1,0 +1,182 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "contract_form_v1.schema.json",
+  "title": "Contract LLM Creator - Input Form (v1)",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "contract_type": {
+      "type": "string",
+      "enum": ["supply"]
+    },
+    "language_mode": {
+      "type": "string",
+      "enum": ["ru", "en", "bilingual"]
+    },
+    "currency": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "payment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "payment_trigger": {
+          "type": "string",
+          "minLength": 1,
+          "description": "E.g. invoice_date"
+        },
+        "payment_term_days": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3650
+        },
+        "prepayment_required": {
+          "type": "boolean"
+        },
+        "bank_details_included": {
+          "type": "boolean"
+        },
+        "withholding_allowed": {
+          "type": "boolean"
+        },
+        "suspension_right": {
+          "type": "boolean"
+        },
+        "bank_charges": {
+          "type": "string",
+          "enum": ["payer", "payee", "shared", ""]
+        },
+        "vat_mode": {
+          "type": "string",
+          "enum": [
+            "exclusive_if_any",
+            "inclusive",
+            "not_applicable",
+            ""
+          ]
+        },
+        "late_payment_penalty_enabled": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "payment_trigger",
+        "payment_term_days",
+        "prepayment_required",
+        "bank_details_included",
+        "withholding_allowed",
+        "suspension_right",
+        "bank_charges",
+        "vat_mode",
+        "late_payment_penalty_enabled"
+      ]
+    },
+
+    "delivery": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "delivery_trigger": {
+          "type": "string",
+          "minLength": 1,
+          "description": "E.g. within_days_from_effective"
+        },
+        "delivery_term_days": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3650
+        },
+        "delivery_place": {
+          "type": "string",
+          "minLength": 1
+        },
+        "partial_deliveries_allowed": {
+          "type": "boolean"
+        },
+        "acceptance_required": {
+          "type": "boolean"
+        },
+        "acceptance_period_days": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 365
+        },
+        "acceptance_docs": {
+          "type": "string",
+          "minLength": 0,
+          "description": "E.g. act"
+        },
+        "acceptance_rules": {
+          "type": "string",
+          "enum": ["buyer_only", "supplier_only", "mixed", ""]
+        }
+      },
+      "required": [
+        "delivery_trigger",
+        "delivery_term_days",
+        "delivery_place",
+        "partial_deliveries_allowed",
+        "acceptance_required",
+        "acceptance_period_days",
+        "acceptance_docs",
+        "acceptance_rules"
+      ]
+    },
+
+    "liability": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "liability_cap_enabled": {
+          "type": "boolean"
+        },
+        "liability_cap_type": {
+          "type": "string",
+          "enum": ["contract_price", "fixed_amount", "other", ""]
+        },
+        "cap_scope": {
+          "type": "string",
+          "enum": ["aggregate", "per_claim", "other", ""]
+        },
+        "indirect_damages_excluded": {
+          "type": "boolean"
+        },
+        "exceptions_to_cap": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["fraud", "wilful_misconduct", "gross_negligence", "ip_infringement", "other"]
+          },
+          "uniqueItems": true
+        },
+        "delay_in_delivery_penalty_enabled": {
+          "type": "boolean"
+        },
+        "claim_notice_days": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3650
+        }
+      },
+      "required": [
+        "liability_cap_enabled",
+        "liability_cap_type",
+        "cap_scope",
+        "indirect_damages_excluded",
+        "exceptions_to_cap",
+        "delay_in_delivery_penalty_enabled",
+        "claim_notice_days"
+      ]
+    }
+  },
+  "required": [
+    "contract_type",
+    "language_mode",
+    "currency",
+    "payment",
+    "delivery",
+    "liability"
+  ]
+}
