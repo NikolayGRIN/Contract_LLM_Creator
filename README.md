@@ -36,8 +36,8 @@ Contract LLM Creator — это offline-пайплайн для работы с 
 
 Ключевые полученные файлы:
 - `contracts_docx_healed`
-- `segments.csv`
-- `segments_report.csv`
+- `corpus_sections.jsonl`
+- `results`
 
 
 2. Формирование локального корпуса договоров (реализовано)
