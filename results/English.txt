@@ -1,0 +1,70 @@
+[PAYMENT_TERMS]
+1.1. The basis for payment shall be the invoice issued by the Supplier.
+1.2. Payment terms are 30 days from the invoice date.
+1.3. The payment date shall be deemed to be the date of the Supplier's bank account being credited.
+1.4. Payment shall be made by bank transfer.
+1.5. No prepayment is required.
+1.6. Withholding or set-off is not allowed unless otherwise agreed.
+1.7. Bank charges incurred in connection with the payment shall be borne by the paying party.
+1.8. VAT, if applicable, shall be added to the price.
+1.9. Invoices may be provided in electronic format.
+1.10. Invoices shall be issued in a timely manner as agreed between the parties.
+1.11. Supporting documents evidencing delivery or acceptance for payment shall be provided as mutually agreed.
+1.12. The parties may agree to a reconciliation statement to resolve any discrepancies.
+1.13. Any corrections to an invoice shall be made by means of a credit note or a corrective invoice.
+1.14. Overpayments shall be refunded or credited to the Supplier's account.
+1.15. Payment for partial deliveries, if applicable, shall be made in accordance with the terms of the Contract.
+1.16. The currency of payment shall be as agreed in the Contract.
+1.17. No deductions are allowed without the prior written consent of the Supplier.
+1.18. The Supplier reserves the right to suspend further deliveries in the event of the Buyer's failure to pay for any one shipment when payment becomes due.
+1.19. Any disputed amounts shall be paid by the Buyer to the Supplier, with any disputes to be resolved by mutual agreement.
+1.20. Both parties agree to maintain records of all payments made.
+1.21. The Supplier is entitled to receive payment on the dates determined in the Contract or a respective Change Order, if any.
+1.22. The Buyer shall have no right of set-off against any payment due to the Supplier.
+1.23. The Supplier reserves the right to suspend further deliveries in the event of the Buyer's failure to pay for any one shipment when payment becomes due.
+1.24. The Supplier shall be entitled to receive payment in accordance with the terms of the Contract.
+1.25. The Buyer shall ensure that all payments are made in a timely manner.
+1.26. The Supplier may require payment by letter of credit, subject to the terms communicated by the Supplier to the Buyer.
+1.27. The Buyer shall ensure that all invoices are issued in a timely manner.
+1.28. The Supplier shall be entitled to receive payment on the dates determined in the Contract or a respective Change Order, if any.
+1.29. The Buyer shall ensure that all supporting documents are provided in a timely manner.
+
+[DELIVERY_TERMS]
+2.1. The delivery term is 135 days from the Effective Date.
+2.2. The delivery place is Moscow.
+2.3. Partial shipments are allowed.
+2.4. Delivery dates are estimates and minor delays do not terminate the contract.
+2.5. The delivery schedule per batch/lot and coordination procedure shall be determined by mutual agreement.
+2.6. The Supplier is required to provide standard packaging for the goods.
+2.7. Each batch/item shall be marked with the batch number and identification code.
+2.8. The Supplier shall be responsible for organizing the transport and selecting the carrier.
+2.9. The Supplier shall be responsible for loading the goods onto the carrier at the delivery point.
+2.10. The Buyer shall be responsible for unloading the goods from the carrier at the delivery point.
+2.11. Risk of loss or damage shall transfer to the Buyer upon delivery of the goods to the Buyer at the delivery point.
+2.12. Title to the goods shall transfer to the Buyer upon delivery to the Buyer at the delivery point.
+2.13. Standard delivery/acceptance documents shall be provided by the Supplier.
+2.14. The acceptance procedure shall include inspection, signing, and handling of discrepancies.
+2.15. The acceptance timeline shall be within 10 days from the delivery date; failure to respond within this period shall be deemed acceptance.
+2.16. The Buyer shall be responsible for any storage or redelivery costs if it fails to take delivery of the goods.
+2.17. The Supplier may suspend delivery for delivery-related reasons without incurring any payment obligations.
+2.18. Delivery may be refused if it violates any applicable laws or policies.
+2.19. Re-delivery or replacement logistics shall be at the Supplier’s expense.
+2.20. The Supplier shall be responsible for insuring the goods against transport damages only at the Buyer’s express instruction and on the Buyer’s account.
+2.21. The risk of loss or damage shall pass with the handover of the customarily packaged goods to the Buyer, the first freight carrier, or the forwarding agent.
+2.22. This also applies for separate partial deliveries and if the Supplier has borne the forwarding charges.
+2.23. If the shipment is delayed by the Buyer’s request or in case of default of acceptance, the risk shall pass with the notice of readiness for shipment.
+2.24. Transport packaging, selling packaging, re-packaging, and any other packaging according to the regulations about packaging will not be taken back, excepting pallets.
+2.25. The Buyer shall be obligated to arrange the disposal of the packaging at its own expense.
+2.26. The Supplier shall be responsible for any corrections, including re-delivery or replacement logistics.
+2.27. The Supplier shall provide communication on delivery scheduling as required.
+2.28. The Supplier shall ensure that the goods are delivered in a safe and compliant manner.
+2.29. Any refusal of delivery due to non-compliance with laws or policies shall be at the Buyer’s risk.
+
+[LIABILITY_PENALTIES]
+
+(Section text will be generated here)
+
+
+[DISPUTES_GOVERNING_LAW]
+
+(Section text will be generated here)
