@@ -1,0 +1,48 @@
+{
+  "Полнота_структуры": 1.0,
+  "Корректность_нумерации": true,
+  "Достаточный_объем_разделов": true,
+  "Коэффициент_лексического_разнообразия": 0.466,
+  "Количество_дословных_повторов": 0,
+  "Соответствие_параметрам_формы": 0.9,
+  "Количество_галлюцинаций": 2,
+  "Детализация": {
+    "numbering": {
+      "top_valid": true,
+      "issues": []
+    },
+    "section_sizes_no_spaces": {
+      "1": 1413,
+      "2": 829,
+      "3": 1376,
+      "4": 1633,
+      "5": 2233,
+      "6": 2008,
+      "7": 1989,
+      "8": 1868,
+      "9": 3147,
+      "10": 808
+    },
+    "duplicate_sentence_examples": {},
+    "parameter_presence": {
+      "matched": [
+        "goods_description",
+        "currency",
+        "contract_price",
+        "payment_term_days",
+        "prepayment_percent",
+        "delivery_place",
+        "delivery_within_months",
+        "acceptance_period_days",
+        "warranty_period_months"
+      ],
+      "missing": [
+        "incoterms_and_version"
+      ]
+    },
+    "hallucination_issues": [
+      "governing_law_mismatch_or_missing",
+      "liability_law_mismatch_usa"
+    ]
+  }
+}

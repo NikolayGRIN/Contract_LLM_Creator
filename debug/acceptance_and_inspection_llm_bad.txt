@@ -1,0 +1,38 @@
+ATTEMPT: 3/3
+ERROR: too_short
+
+6.1. The Buyer is obligated to inspect and accept the Goods within three days from delivery, as per the acceptance period specified herein.
+
+6.2. Upon receipt of the Goods at the Delivery Place in Mumbai, the Buyer shall verify the quantity, completeness, and absence of visible damage or discrepancies against the shipping documents provided by the Seller.
+
+6.3. The Buyer is required to execute an Acceptance Act within three days from delivery, which will serve as a conclusive evidence of acceptance unless notice of defects is given within this period.
+
+6.4. If any discrepancy in packaging or quantity is observed during inspection at Delivery Place, the Buyer shall document such observations on the shipping documents and notify the Seller promptly.
+
+6.5. The Seller must provide updated shipping documents if discrepancies are found post-delivery but before acceptance by the Buyer.
+
+6.6. In case of defects identified within three days from delivery but prior to execution of the Acceptance Act, the Seller shall address such defects within ten days from receipt of notice by the Buyer.
+
+6.7. The remedies available for defects include replacement, repair, or additional supply as mutually agreed between the parties within fourteen days from defect notification.
+
+6.8. Where defective products are identified post-delivery but before acceptance, the Seller is required to ensure that all shipping documents are accurate and complete upon transfer of Goods to the Buyer.
+
+6.9. The Buyer shall inspect packaging for any visible damage or discrepancies in transit upon delivery and record such observations on the Acceptance Act.
+
+6.10. Upon identification of defects during inspection, the Buyer may invoke remedies including replacement, repair, or additional supply within fourteen days from receipt of the Goods.
+
+6.11. If no written notice is provided by the Buyer regarding deficiencies within the acceptance period, the Seller shall be entitled to consider the Goods as fully accepted and in compliance with contract terms.
+
+6.12. The parties agree that any disputes concerning quantity, quality, or completeness of delivery will be resolved through joint inspection or reconciliation conducted within a reasonable time not exceeding thirty days from the date of dispute notification.
+
+6.13. The Seller is required to ensure all shipping documents are accurate and complete upon transfer of Goods to the Buyer, including certificates of origin and other relevant documentation.
+
+6.14. If defects are identified post-delivery but before acceptance by the Buyer, the Seller shall provide updated shipping documents if necessary within ten days from receipt of notice by the Buyer.
+
+6.15. The parties agree that any defective products identified during inspection will be subject to remedies including replacement or repair as mutually agreed upon within fourteen days from defect notification.
+
+6.16. In cases where defects are not reported in writing by the Buyer within the acceptance period, the Seller shall consider the Goods fully accepted and in compliance with contract terms.
+
+6.17. The parties agree that any discrepancies identified during inspection will be recorded on the Acceptance Act to serve as a basis for claims or remedies if applicable.
+
+6.18. If defects are not reported by the Buyer within three days from delivery, the Seller shall be entitled to consider the Goods fully accepted and in compliance with contract terms.

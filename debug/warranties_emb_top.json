@@ -1,0 +1,145 @@
+{
+  "candidates": [
+    {
+      "score": 0.7829108238220215,
+      "doc_id": "Двуязычный Договор_КТК-Р_нерезидент__headings_fixed",
+      "title": "10.1.1. compliance of the Goods with the effective GOSTs and technical conditions as set out in the Specification;",
+      "chunk_id": 3
+    },
+    {
+      "score": 0.7753465175628662,
+      "doc_id": "Двуязычный Договор_КТК-Р_нерезидент__headings_fixed",
+      "title": "The Parties shall accept the following terms and their interpretations hereunder",
+      "chunk_id": 0
+    },
+    {
+      "score": 0.7593756318092346,
+      "doc_id": "Двуязычный Договор_КТК-Р_нерезидент__headings_fixed",
+      "title": "10.1.1. compliance of the Goods with the effective GOSTs and technical conditions as set out in the Specification;",
+      "chunk_id": 1
+    },
+    {
+      "score": 0.7516969442367554,
+      "doc_id": "Двуязычный Договор_КТК-Р_нерезидент__headings_fixed",
+      "title": "10.1.1. compliance of the Goods with the effective GOSTs and technical conditions as set out in the Specification;",
+      "chunk_id": 2
+    },
+    {
+      "score": 0.7499947547912598,
+      "doc_id": "Двуязычный ВНЕШНЕЭКОНОМИЧЕСКИЙ ДОГОВОР КОНТРАКТ__headings_fixed",
+      "title": "8.1.4. Что комплектность поставляемого товара и переданной технической документации соответствуют требованиям договора.",
+      "chunk_id": 0
+    },
+    {
+      "score": 0.7433791160583496,
+      "doc_id": "Двуязычный Договор_КТК-Р_нерезидент__headings_fixed",
+      "title": "10.1.1. compliance of the Goods with the effective GOSTs and technical conditions as set out in the Specification;",
+      "chunk_id": 4
+    },
+    {
+      "score": 0.7396780252456665,
+      "doc_id": "Двуязычный Договор_КТК-Р_нерезидент__headings_fixed",
+      "title": "10.1.1. compliance of the Goods with the effective GOSTs and technical conditions as set out in the Specification;",
+      "chunk_id": 0
+    },
+    {
+      "score": 0.7313711643218994,
+      "doc_id": "Двуязычный ВНЕШНЕЭКОНОМИЧЕСКИЙ ДОГОВОР КОНТРАКТ__headings_fixed",
+      "title": "8.1.4. Что комплектность поставляемого товара и переданной технической документации соответствуют требованиям договора.",
+      "chunk_id": 1
+    },
+    {
+      "score": 0.7259189486503601,
+      "doc_id": "Двуязычный договор Узбекистан__headings_fixed",
+      "title": "5.3 Продавец должен проверить качество Товаров и устранить любые неисправности, если таковые имеются, перед отгрузкой.",
+      "chunk_id": 0
+    },
+    {
+      "score": 0.7098813652992249,
+      "doc_id": "Двуязычная проформа договора__headings_fixed",
+      "title": "5.1. Товар должен быть упакован и маркирован в соответствии с международными стандартами экспортных упаковок.",
+      "chunk_id": 4
+    },
+    {
+      "score": 0.7028270959854126,
+      "doc_id": "Двуязычная проформа договора__headings_fixed",
+      "title": "5.1. Товар должен быть упакован и маркирован в соответствии с международными стандартами экспортных упаковок.",
+      "chunk_id": 1
+    },
+    {
+      "score": 0.7006602883338928,
+      "doc_id": "Двуязычная проформа договора__headings_fixed",
+      "title": "5.1. Товар должен быть упакован и маркирован в соответствии с международными стандартами экспортных упаковок.",
+      "chunk_id": 0
+    },
+    {
+      "score": 0.6896097660064697,
+      "doc_id": "Двуязычный контракт (3)__headings_fixed",
+      "title": "15. ПРОЧИЕ УСЛОВИЯ",
+      "chunk_id": 2
+    },
+    {
+      "score": 0.6869982481002808,
+      "doc_id": "Двуязычный Договор_КТК-Р_нерезидент__headings_fixed",
+      "title": "The Parties shall accept the following terms and their interpretations hereunder",
+      "chunk_id": 7
+    },
+    {
+      "score": 0.6810203790664673,
+      "doc_id": "Двуязычный Договор_КТК-Р_нерезидент__headings_fixed",
+      "title": "The Parties shall accept the following terms and their interpretations hereunder",
+      "chunk_id": 4
+    }
+  ],
+  "selected": [
+    {
+      "score": 0.7829108238220215,
+      "doc_id": "Двуязычный Договор_КТК-Р_нерезидент__headings_fixed",
+      "title": "10.1.1. compliance of the Goods with the effective GOSTs and technical conditions as set out in the Specification;",
+      "chunk_id": 3
+    },
+    {
+      "score": 0.7499947547912598,
+      "doc_id": "Двуязычный ВНЕШНЕЭКОНОМИЧЕСКИЙ ДОГОВОР КОНТРАКТ__headings_fixed",
+      "title": "8.1.4. Что комплектность поставляемого товара и переданной технической документации соответствуют требованиям договора.",
+      "chunk_id": 0
+    },
+    {
+      "score": 0.6896097660064697,
+      "doc_id": "Двуязычный контракт (3)__headings_fixed",
+      "title": "15. ПРОЧИЕ УСЛОВИЯ",
+      "chunk_id": 2
+    },
+    {
+      "score": 0.7259189486503601,
+      "doc_id": "Двуязычный договор Узбекистан__headings_fixed",
+      "title": "5.3 Продавец должен проверить качество Товаров и устранить любые неисправности, если таковые имеются, перед отгрузкой.",
+      "chunk_id": 0
+    },
+    {
+      "score": 0.7098813652992249,
+      "doc_id": "Двуязычная проформа договора__headings_fixed",
+      "title": "5.1. Товар должен быть упакован и маркирован в соответствии с международными стандартами экспортных упаковок.",
+      "chunk_id": 4
+    },
+    {
+      "score": 0.6374880075454712,
+      "doc_id": "Двуязычный договор__headings_fixed",
+      "title": "Для целей настоящего пункта",
+      "chunk_id": 2
+    },
+    {
+      "score": 0.6446293592453003,
+      "doc_id": "Двуязычный контракт (2)__headings_fixed",
+      "title": "8.8 Следующие претензии не принимаются Продавцом",
+      "chunk_id": 0
+    },
+    {
+      "score": 0.6386246085166931,
+      "doc_id": "Двуязычный договор поставки 2__headings_fixed",
+      "title": "10. Претензии",
+      "chunk_id": 0
+    }
+  ],
+  "lambda_mult": 0.75
+}

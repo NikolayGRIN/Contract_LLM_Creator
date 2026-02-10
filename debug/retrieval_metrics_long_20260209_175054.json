@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "timestamp": "20260209_175054",
+    "queries_used": 171,
+    "candidates": 1522,
+    "sections": [
+      "payment_terms",
+      "delivery_terms"
+    ],
+    "K": 10,
+    "hybrid_alpha": 0.5,
+    "llama_embed": true,
+    "llama_embed_model": "models\\bge-m3-q4_k_m.gguf",
+    "llama_embed_batch": 32,
+    "method_order": [
+      "bm25",
+      "emb_tfidf",
+      "hybrid",
+      "emb_llama",
+      "hybrid_llama"
+    ],
+    "metric_order": [
+      "recall@5",
+      "recall@10",
+      "precision@10",
+      "mrr@10"
+    ]
+  },
+  "rows": [
+    {
+      "method": "bm25",
+      "metric": "recall@5",
+      "value": 0.5906432748538012,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "bm25",
+      "metric": "recall@10",
+      "value": 0.6900584795321637,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "bm25",
+      "metric": "precision@10",
+      "value": 0.4421052631578943,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "bm25",
+      "metric": "mrr@10",
+      "value": 0.5881486122714192,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "emb_tfidf",
+      "metric": "recall@5",
+      "value": 0.5964912280701754,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "emb_tfidf",
+      "metric": "recall@10",
+      "value": 0.7076023391812866,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "emb_tfidf",
+      "metric": "precision@10",
+      "value": 0.46608187134502915,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "emb_tfidf",
+      "metric": "mrr@10",
+      "value": 0.5773275782047712,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "hybrid",
+      "metric": "recall@5",
+      "value": 0.6023391812865497,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "hybrid",
+      "metric": "recall@10",
+      "value": 0.6549707602339181,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "hybrid",
+      "metric": "precision@10",
+      "value": 0.4690058479532158,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "hybrid",
+      "metric": "mrr@10",
+      "value": 0.580945419103314,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "emb_llama",
+      "metric": "recall@5",
+      "value": 0.7602339181286549,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "emb_llama",
+      "metric": "recall@10",
+      "value": 0.9298245614035088,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "emb_llama",
+      "metric": "precision@10",
+      "value": 0.4502923976608187,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "emb_llama",
+      "metric": "mrr@10",
+      "value": 0.5605843311983664,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "hybrid_llama",
+      "metric": "recall@5",
+      "value": 0.6081871345029239,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "hybrid_llama",
+      "metric": "recall@10",
+      "value": 0.6608187134502924,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "hybrid_llama",
+      "metric": "precision@10",
+      "value": 0.45730994152046794,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    },
+    {
+      "method": "hybrid_llama",
+      "metric": "mrr@10",
+      "value": 0.580049661190012,
+      "K": 10,
+      "hybrid_alpha": 0.5,
+      "queries_used": 171,
+      "candidates": 1522
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+shingle_loop(k=5, overused=3, top='any claim or series of' x3)

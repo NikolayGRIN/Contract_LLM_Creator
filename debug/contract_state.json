@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "contract_type": "supply",
+    "language_mode": "ru",
+    "version": "v1"
+  },
+  "parties": {
+    "seller": {
+      "name": null,
+      "role_label_en": "Seller",
+      "role_label_ru": "Продавец"
+    },
+    "buyer": {
+      "name": null,
+      "role_label_en": "Buyer",
+      "role_label_ru": "Покупатель"
+    }
+  },
+  "commercial_terms": {
+    "currency": "USD",
+    "price_total": null,
+    "vat_included": null,
+    "contract_price": "500 000",
+    "vat_mode": "exclusive_if_any",
+    "price_basis": "per_unit",
+    "price_includes_packaging": true
+  },
+  "payment_terms": {
+    "payment_due_days": 30,
+    "advance_percent": null,
+    "late_payment_penalty_rate": null,
+    "late_payment_penalty_basis": null,
+    "payment_trigger": "invoice_date",
+    "prepayment_required": null,
+    "bank_details_included": true,
+    "withholding_allowed": false,
+    "suspension_right": true,
+    "bank_charges": "payer",
+    "late_payment_penalty_enabled": false,
+    "prepayment_amount": null,
+    "prepayment_currency": "USD",
+    "details": {
+      "invoice_format": "электронная копия допускается",
+      "supporting_documents": [
+        "накладная",
+        "акт"
+      ],
+      "partial_payments_allowed": true,
+      "overpayment_rule": "возврат или зачет по согласованию сторон",
+      "disputed_amounts_rule": "оплачивается неоспариваемая часть; спорная часть — по согласованию"
+    }
+  },
+  "delivery_terms": {
+    "incoterms": "DAP",
+    "incoterms_version": "2020",
+    "delivery_place": "Минск",
+    "delivery_days": null,
+    "delivery_date_type": "within_days_from_effective",
+    "partial_shipments_allowed": true,
+    "details": {
+      "packaging_standard": "упаковка, обеспечивающая сохранность при перевозке",
+      "marking_standard": "маркировка тары и мест согласно стандартной практике",
+      "carrier_selection": "перевозчик выбирается Поставщиком с правом согласования Покупателем",
+      "loading_party": "Поставщик",
+      "unloading_party": "Покупатель",
+      "delivery_documents": [
+        "накладная",
+        "акт"
+      ],
+      "delivery_schedule_rule": "график партий согласуется дополнительно"
+    }
+  },
+  "legal_terms": {
+    "governing_law": "международное право",
+    "dispute_resolution": "arbitration",
+    "arbitration_seat": null,
+    "court_place": "Москва",
+    "force_majeure_notice_days": 7,
+    "details": {
+      "pretrial_negotiation": true,
+      "pretrial_term_days": 10
+    }
+  },
+  "consistency": {
+    "conflicts": [],
+    "warnings": [
+      "Consistency: near-duplicate subclauses detected in Payment Terms: [(23, 28, 0.9615384615384616)]",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: near-duplicate subclauses detected in Payment Terms: [(23, 28, 0.9615384615384616)]",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: near-duplicate subclauses detected in Payment Terms: [(19, 29, 0.9907407407407407), (20, 25, 0.98989898989899), (21, 27, 0.9864864864864865)]",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: near-duplicate subclauses detected in Payment Terms: [(22, 23, 0.987012987012987), (22, 24, 0.987012987012987), (22, 25, 0.987012987012987)]",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: suspension_right=true but text says late payment does NOT entail suspension.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: near-duplicate subclauses detected in Delivery Terms: [(20, 25, 0.9315068493150684), (26, 27, 0.9917355371900827), (26, 28, 0.9917355371900827)]",
+      "Consistency: currency=RUB but Payment Terms do not mention RUB/руб.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: suspension_right=true but text says late payment does NOT entail suspension.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: suspension_right=true but text says late payment does NOT entail suspension.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: suspension_right=true but text says late payment does NOT entail suspension.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: suspension_right=true but text says late payment does NOT entail suspension.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: suspension_right=true but text says late payment does NOT entail suspension.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: suspension_right=true but text says late payment does NOT entail suspension.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: suspension_right=true but text says late payment does NOT entail suspension.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: suspension_right=true but text says late payment does NOT entail suspension.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: bank_details_included=false but bank details appear in Payment Terms.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: currency=USD but Payment Terms do not mention it.",
+      "Consistency: currency=USD but Payment Terms do not mention it.",
+      "Consistency: currency=USD but Payment Terms do not mention it.",
+      "Consistency: currency=USD but Payment Terms do not mention it.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: currency=USD but Payment Terms do not mention it.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.",
+      "Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off."
+    ]
+  },
+  "goods": {
+    "goods_description": "Станок ЧПУ",
+    "quantity": "15",
+    "specification_ref": "Annex No.1",
+    "country_of_origin_required": true
+  },
+  "acceptance": {
+    "acceptance_required": true,
+    "acceptance_period_days": 21,
+    "acceptance_document": "act",
+    "acceptance_rules": "mixed",
+    "documents_required": [
+      "накладная",
+      "акт"
+    ],
+    "details": {
+      "inspection_scope": "количество, комплектность, внешние повреждения, соответствие спецификации",
+      "defect_notice_method": "письменное уведомление с описанием дефектов и фото (если применимо)",
+      "silent_acceptance_rule": "при отсутствии замечаний в срок приемки товары считаются принятыми",
+      "remedy_options": [
+        "замена",
+        "ремонт",
+        "докомплектация"
+      ],
+      "remedy_time_days": 14
+    }
+  },
+  "warranties": {
+    "warranty_period_months": 12,
+    "warranty_start": "с даты приемки (подписания акта)",
+    "remedy": "repair_or_replace",
+    "response_time_days": 7,
+    "details": {
+      "covered_defects": "производственные и скрытые дефекты",
+      "excluded_cases": [
+        "неправильная эксплуатация",
+        "механические повреждения по вине Покупателя"
+      ],
+      "service_location": "по месту нахождения товара либо в сервисном центре Поставщика",
+      "spare_parts_rule": "запасные части предоставляются Поставщиком при необходимости"
+    }
+  },
+  "liability_terms": {
+    "liability_cap_enabled": true,
+    "liability_cap_type": "contract_price",
+    "cap_scope": "aggregate",
+    "indirect_damages_excluded": true,
+    "exceptions_to_cap": [
+      "fraud",
+      "wilful_misconduct"
+    ],
+    "delay_in_delivery_penalty_enabled": false,
+    "claim_notice_days": 30,
+    "details": {
+      "general_rule": "ответственность по законодательству РФ, если иное не установлено договором",
+      "penalty_payment_procedure": "неустойка уплачивается на основании письменной претензии и счета",
+      "penalty_no_release_clause": true,
+      "claim_procedure_notes": "претензия направляется по адресу стороны, указанному в договоре",
+      "delay_penalty": {
+        "enabled": true,
+        "rate": null,
+        "one_time_fine_rate": null,
+        "max_percent": null
+      },
+      "defective_goods_penalty": {
+        "enabled": false,
+        "fine_percent": null
+      },
+      "documents_delay_penalty": {
+        "enabled": false,
+        "fine_amount_per_day": null
+      }
+    }
+  }
+}

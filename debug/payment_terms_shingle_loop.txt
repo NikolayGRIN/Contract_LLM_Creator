@@ -1,0 +1,1 @@
+shingle_loop(k=5, overused=20, top='supplier reserves the right to' x4)

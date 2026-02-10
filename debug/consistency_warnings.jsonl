@@ -1,0 +1,6 @@
+Consistency: near-duplicate subclauses detected in Payment Terms: [(23, 28, 0.9615384615384616)]
+Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.
+Consistency: bank_details_included=false but bank details appear in Payment Terms.
+Consistency: near-duplicate subclauses detected in Payment Terms: [(23, 28, 0.9615384615384616)]
+Consistency: withholding_allowed=false but Payment Terms allow withholding/set-off.
+Consistency: bank_details_included=false but bank details appear in Payment Terms.

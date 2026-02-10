@@ -1,0 +1,9 @@
+{
+  "required_total": 10,
+  "present_required": 10,
+  "missing_required": [],
+  "present_optional": [],
+  "unknown_present": [],
+  "completion_ratio": 1.0,
+  "notes": []
+}

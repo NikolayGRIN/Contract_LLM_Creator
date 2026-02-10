@@ -1,0 +1,15 @@
+{
+  "corpus": "data\\corpus_sections.jsonl",
+  "model": "models\\bge-m3-q4_k_m.gguf",
+  "docs_selected": 1522,
+  "total_chunks": 3265,
+  "dim": 1024,
+  "chunk_tokens": 256,
+  "chunk_overlap": 64,
+  "files": {
+    "emb_chunks_npy": "debug\\emb_index_bge_m3\\bge_m3_emb_chunks.npy",
+    "chunks_meta_jsonl": "debug\\emb_index_bge_m3\\bge_m3_chunks_meta.jsonl",
+    "doc_embs_npy": "debug\\emb_index_bge_m3\\bge_m3_doc_embs.npy",
+    "docs_meta_jsonl": "debug\\emb_index_bge_m3\\bge_m3_docs_meta.jsonl"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "summary": {
+    "sections_total": 1,
+    "sections_ok": 0,
+    "pass_rate": 0.0,
+    "avg_sentence_unique_ratio": 1.0,
+    "avg_coverage_hit_ratio": 0.5,
+    "avg_similarity_max": null
+  },
+  "per_section": [
+    {
+      "section_id": "governing_law_and_disputes",
+      "ok": false,
+      "errors": [
+        "Too short: len_no_spaces=24 < 700",
+        "Likely truncated (no ending punctuation).",
+        "Coverage failed: hit_ratio=0.500 < min=0.550"
+      ],
+      "metrics": {
+        "generation_type": "rag_llm",
+        "min_chars_no_spaces": 700,
+        "len_no_spaces": 24,
+        "language_ok": true,
+        "language_msg": "ok",
+        "crossrefs_ok": true,
+        "garbage_ok": true,
+        "likely_truncated": true,
+        "trunc_msg": "Likely truncated (no ending punctuation).",
+        "repetition": {
+          "sentence_count": 2,
+          "sentence_unique_ratio": 1.0,
+          "max_sentence_dup_count": 1,
+          "top_repeated_sentences": []
+        },
+        "coverage": {
+          "patterns_total": 4,
+          "patterns_hit": 2,
+          "hit_ratio": 0.5,
+          "min_hit_ratio": 0.55,
+          "passed": false,
+          "details": [
+            {
+              "pattern": "\\bприменим(ое|ым)\\s+прав|\\bприменимое\\s+право\\b",
+              "hit": true
+            },
+            {
+              "pattern": "\\bспор|\\bразноглас",
+              "hit": true
+            },
+            {
+              "pattern": "\\bсуд\\b|\\bарбитраж\\b",
+              "hit": false
+            },
+            {
+              "pattern": "\\bместо\\b",
+              "hit": false
+            }
+          ]
+        },
+        "numeric_consistency": {
+          "days_values": [],
+          "months_values": [],
+          "percent_values": [],
+          "currency_values": [],
+          "flags": [],
+          "passed": true
+        },
+        "similarity_to_context": {
+          "enabled": false,
+          "reason": "no_context",
+          "sim_mean": null,
+          "sim_max": null
+        }
+      }
+    }
+  ]
+}

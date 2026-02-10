@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "attempts": 1,
+  "errors": [],
+  "debug": {
+    "section_id": "governing_law_and_disputes",
+    "language_mode": "ru",
+    "forbidden": {
+      "hits": [],
+      "hits_count": 0,
+      "threshold": 1
+    },
+    "repetition": {
+      "sentence_unique_ratio": 1.0,
+      "min_unique_ratio": 0.88
+    },
+    "shingles": {
+      "k_words": 5,
+      "max_occ": 3,
+      "max_overused_shingles": 1,
+      "overused_count": 0,
+      "overused_top": []
+    }
+  }
+}

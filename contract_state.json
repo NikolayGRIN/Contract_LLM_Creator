@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "contract_type": "supply",
+    "language_mode": "en",
+    "version": "v1"
+  },
+  "parties": {
+    "seller": {
+      "name": null,
+      "role_label_en": "Seller",
+      "role_label_ru": "Продавец"
+    },
+    "buyer": {
+      "name": null,
+      "role_label_en": "Buyer",
+      "role_label_ru": "Покупатель"
+    }
+  },
+  "commercial_terms": {
+    "currency": null,
+    "price_total": null,
+    "vat_included": null
+  },
+  "payment_terms": {
+    "payment_due_days": null,
+    "advance_percent": null,
+    "late_payment_penalty_rate": null,
+    "late_payment_penalty_basis": null
+  },
+  "delivery_terms": {
+    "incoterms": null,
+    "incoterms_version": null,
+    "delivery_place": null,
+    "delivery_days": null
+  },
+  "legal_terms": {
+    "governing_law": null,
+    "dispute_resolution": null,
+    "arbitration_seat": null
+  },
+  "consistency": {
+    "conflicts": [],
+    "warnings": []
+  }
+}

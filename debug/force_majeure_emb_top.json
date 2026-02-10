@@ -1,0 +1,145 @@
+{
+  "candidates": [
+    {
+      "score": 0.7158204913139343,
+      "doc_id": "Двуязычный договор__headings_fixed",
+      "title": "8. Форс-мажор",
+      "chunk_id": 1
+    },
+    {
+      "score": 0.6807055473327637,
+      "doc_id": "Двуязычный договор__headings_fixed",
+      "title": "8. Форс-мажор",
+      "chunk_id": 0
+    },
+    {
+      "score": 0.6737920045852661,
+      "doc_id": "Двуязычный Договор_КТК-Р_нерезидент__headings_fixed",
+      "title": "17. FORCE MAJEURE",
+      "chunk_id": 2
+    },
+    {
+      "score": 0.6692494750022888,
+      "doc_id": "Двуязычный контракт (2)__headings_fixed",
+      "title": "12. Форс-мажор.",
+      "chunk_id": 0
+    },
+    {
+      "score": 0.6690515875816345,
+      "doc_id": "Двуязычный Договор_КТК-Р_нерезидент__headings_fixed",
+      "title": "17. FORCE MAJEURE",
+      "chunk_id": 0
+    },
+    {
+      "score": 0.6639258861541748,
+      "doc_id": "Двуязычный Договор_КТК-Р_нерезидент__headings_fixed",
+      "title": "17. FORCE MAJEURE",
+      "chunk_id": 3
+    },
+    {
+      "score": 0.6569640636444092,
+      "doc_id": "Двуязычный ВНЕШНЕЭКОНОМИЧЕСКИЙ ДОГОВОР КОНТРАКТ__headings_fixed",
+      "title": "11. ФОРС-МАЖОР",
+      "chunk_id": 0
+    },
+    {
+      "score": 0.6487773060798645,
+      "doc_id": "Двуязычный контракт (3)__headings_fixed",
+      "title": "14. ОБСТОЯТЕЛЬСТВА НЕПРЕОДОЛИМОЙ СИЛЫ",
+      "chunk_id": 1
+    },
+    {
+      "score": 0.6467666625976562,
+      "doc_id": "Двуязычный Договор_КТК-Р_нерезидент__headings_fixed",
+      "title": "17. FORCE MAJEURE",
+      "chunk_id": 1
+    },
+    {
+      "score": 0.6455401182174683,
+      "doc_id": "Двуязычная проформа договора__headings_fixed",
+      "title": "7.6. Применимом правом настоящего Договора является Конвенция ООН о договорах международной купле-продаже товаров (Вена, 1980г.).",
+      "chunk_id": 0
+    },
+    {
+      "score": 0.6434174180030823,
+      "doc_id": "Двуязычный Договор_КТК-Р_нерезидент__headings_fixed",
+      "title": "17. FORCE MAJEURE",
+      "chunk_id": 4
+    },
+    {
+      "score": 0.6377642154693604,
+      "doc_id": "Двуязычный договор Узбекистан__headings_fixed",
+      "title": "7.2.5 Acts of governmental bodies or agencies, foreign or domestic.",
+      "chunk_id": 0
+    },
+    {
+      "score": 0.633257269859314,
+      "doc_id": "Двуязычный договор Узбекистан__headings_fixed",
+      "title": "7.2.5 Acts of governmental bodies or agencies, foreign or domestic.",
+      "chunk_id": 1
+    },
+    {
+      "score": 0.6261157989501953,
+      "doc_id": "Двуязычный договор__headings_fixed",
+      "title": "Для целей настоящего пункта",
+      "chunk_id": 2
+    },
+    {
+      "score": 0.6230762004852295,
+      "doc_id": "Двуязычный ДОГОВОР ВЫПОЛНЕНИЯ РАБОТ __headings_fixed",
+      "title": "3. FORCE MAJEURE",
+      "chunk_id": 0
+    }
+  ],
+  "selected": [
+    {
+      "score": 0.7158204913139343,
+      "doc_id": "Двуязычный договор__headings_fixed",
+      "title": "8. Форс-мажор",
+      "chunk_id": 1
+    },
+    {
+      "score": 0.6122698783874512,
+      "doc_id": "Двуязычный Договор_КТК-Р_нерезидент__headings_fixed",
+      "title": "5.5. The Supplier shall transfer the Goods in the box and/or package ensuring safety of the Goods subject to the usual storage conditions.",
+      "chunk_id": 2
+    },
+    {
+      "score": 0.6692494750022888,
+      "doc_id": "Двуязычный контракт (2)__headings_fixed",
+      "title": "12. Форс-мажор.",
+      "chunk_id": 0
+    },
+    {
+      "score": 0.6487773060798645,
+      "doc_id": "Двуязычный контракт (3)__headings_fixed",
+      "title": "14. ОБСТОЯТЕЛЬСТВА НЕПРЕОДОЛИМОЙ СИЛЫ",
+      "chunk_id": 1
+    },
+    {
+      "score": 0.6569640636444092,
+      "doc_id": "Двуязычный ВНЕШНЕЭКОНОМИЧЕСКИЙ ДОГОВОР КОНТРАКТ__headings_fixed",
+      "title": "11. ФОРС-МАЖОР",
+      "chunk_id": 0
+    },
+    {
+      "score": 0.5482882261276245,
+      "doc_id": "Двуязычный ДОГОВОР ВЫПОЛНЕНИЯ РАБОТ __headings_fixed",
+      "title": "1 неделя / week",
+      "chunk_id": 0
+    },
+    {
+      "score": 0.633257269859314,
+      "doc_id": "Двуязычный договор Узбекистан__headings_fixed",
+      "title": "7.2.5 Acts of governmental bodies or agencies, foreign or domestic.",
+      "chunk_id": 1
+    },
+    {
+      "score": 0.6455401182174683,
+      "doc_id": "Двуязычная проформа договора__headings_fixed",
+      "title": "7.6. Применимом правом настоящего Договора является Конвенция ООН о договорах международной купле-продаже товаров (Вена, 1980г.).",
+      "chunk_id": 0
+    }
+  ],
+  "lambda_mult": 0.75
+}

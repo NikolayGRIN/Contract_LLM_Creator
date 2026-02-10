@@ -1,0 +1,132 @@
+{
+  "contract_type": "supply",
+  "language_mode": "ru",
+
+  "commercial": {
+    "currency": "USD",
+    "contract_price": "500 000",
+    "vat_mode": "exclusive_if_any",
+    "price_basis": "per_unit",
+    "price_includes_packaging": true
+  },
+
+  "goods": {
+    "goods_description": "Станок ЧПУ",
+    "quantity": "15",
+    "specification_ref": "Annex No.1",
+    "country_of_origin_required": true
+  },
+
+  "payment": {
+    "payment_trigger": "invoice_date",
+    "payment_term_days": 30,    
+    "prepayment_percent": 25,
+    "bank_details_included": true,
+    "withholding_allowed": false,
+    "suspension_right": true,
+    "bank_charges": "payer",
+    "vat_mode": "exclusive_if_any",
+    "late_payment_penalty_enabled": false,
+
+    "payment_details": {
+      "invoice_format": "электронная копия допускается",
+      "supporting_documents": ["накладная", "акт"],
+      "partial_payments_allowed": true,
+      "overpayment_rule": "возврат или зачет по согласованию сторон",
+      "disputed_amounts_rule": "оплачивается неоспариваемая часть; спорная часть — по согласованию"
+    }
+  },
+
+  "delivery": {
+    "delivery_date_type": "within_days_from_effective",
+    "delivery_within_months": 24,
+    "delivery_place": "Минск",
+    "partial_shipments_allowed": true,
+    "incoterms": "DAP",
+    "incoterms_version": "2020",
+
+    "delivery_details": {
+      "packaging_standard": "упаковка, обеспечивающая сохранность при перевозке",
+      "marking_standard": "маркировка тары и мест согласно стандартной практике",
+      "carrier_selection": "перевозчик выбирается Поставщиком с правом согласования Покупателем",
+      "loading_party": "Поставщик",
+      "unloading_party": "Покупатель",
+      "delivery_documents": ["накладная", "акт"],
+      "delivery_schedule_rule": "график партий согласуется дополнительно"
+    }
+  },
+
+  "acceptance": {
+    "acceptance_required": true,
+    "acceptance_period_days": 21,
+    "acceptance_document": "act",
+    "acceptance_rules": "mixed",
+    "documents_required": ["накладная", "акт"],
+
+    "acceptance_details": {
+      "inspection_scope": "количество, комплектность, внешние повреждения, соответствие спецификации",
+      "defect_notice_method": "письменное уведомление с описанием дефектов и фото (если применимо)",
+      "silent_acceptance_rule": "при отсутствии замечаний в срок приемки товары считаются принятыми",
+      "remedy_options": ["замена", "ремонт", "докомплектация"],
+      "remedy_time_days": 14
+    }
+  },
+
+  "warranties": {
+    "warranty_period_months": 12,
+    "warranty_start": "с даты приемки (подписания акта)",
+    "remedy": "repair_or_replace",
+    "response_time_days": 7,
+
+    "warranty_details": {
+      "covered_defects": "производственные и скрытые дефекты",
+      "excluded_cases": ["неправильная эксплуатация", "механические повреждения по вине Покупателя"],
+      "service_location": "по месту нахождения товара либо в сервисном центре Поставщика",
+      "spare_parts_rule": "запасные части предоставляются Поставщиком при необходимости"
+    }
+  },
+
+  "liability": {
+    "liability_cap_enabled": true,
+    "liability_cap_type": "contract_price",
+    "cap_scope": "aggregate",
+    "indirect_damages_excluded": true,
+    "exceptions_to_cap": ["fraud", "wilful_misconduct"],
+    "delay_in_delivery_penalty_enabled": false,
+    "claim_notice_days": 30,
+
+    "liability_details": {
+      "general_rule": "ответственность по законодательству РФ, если иное не установлено договором",
+      "delay_penalty": {
+        "enabled": true,
+        "rate": null,
+        "one_time_fine_rate": null,
+        "max_percent": null
+      },
+      "defective_goods_penalty": {
+        "enabled": false,
+        "fine_percent": null
+      },
+      "documents_delay_penalty": {
+        "enabled": false,
+        "fine_amount_per_day": null
+      },
+      "penalty_payment_procedure": "неустойка уплачивается на основании письменной претензии и счета",
+      "penalty_no_release_clause": true,
+      "claim_procedure_notes": "претензия направляется по адресу стороны, указанному в договоре"
+    }
+  },
+
+  "legal": {
+    "governing_law": "международное право", 
+    "dispute_resolution": "arbitration", 
+    "court_place": "Москва",
+    "arbitration_seat": null,
+    "force_majeure_notice_days": 7,
+
+    "legal_details": {
+      "pretrial_negotiation": true,
+      "pretrial_term_days": 10
+    }
+  }
+}

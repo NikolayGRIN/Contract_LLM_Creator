@@ -1,0 +1,302 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "contract_form_v2.schema.json",
+  "title": "Contract LLM Creator - Supply Contract Form v2 (extended, null-friendly)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract_type", "language_mode", "payment", "delivery", "liability"],
+  "properties": {
+    "contract_type": { "type": "string", "enum": ["supply"] },
+    "language_mode": { "type": "string", "enum": ["ru", "en"] },
+
+    "currency": {
+      "type": ["string", "null"],
+      "description": "v1 legacy top-level currency; in v2 prefer commercial.currency"
+    },
+
+    "commercial": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "currency": { "type": ["string", "null"] },
+        "contract_price": {
+          "oneOf": [
+            { "type": "number" },
+            { "type": "integer" },
+            { "type": "string" },
+            { "type": "null" }
+          ]
+        },
+        "vat_mode": {
+          "type": ["string", "null"],
+          "enum": ["inclusive", "exclusive_if_any", "exclusive", "not_applicable", "tbd", null]
+        },
+        "price_basis": {
+          "type": ["string", "null"],
+          "enum": ["per_unit", "партия товаров", "per_lot", "lump_sum", "tbd", null]
+        },
+        "price_includes_packaging": { "type": ["boolean", "null"] }
+      }
+    },
+
+    "goods": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type of goods": { "type": ["string", "null"], "minLength": 3 },
+        "goods_description": { "type": ["string", "null"], "minLength": 3 },
+        "quantity": { "type": ["string", "null"], "minLength": 1 },
+        "unit of measure": { "type": ["string", "null"], "minLength": 1 },
+        "specification_ref": { "type": ["string", "null"] },
+        "country_of_origin_required": { "type": ["boolean", "null"] }
+      }
+    },
+
+    "payment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "payment_trigger",
+        "payment_term_days",
+        "prepayment_percent",
+        "bank_details_included",
+        "withholding_allowed",
+        "suspension_right",
+        "bank_charges",
+        "vat_mode",
+        "late_payment_penalty_enabled"
+      ],
+      "properties": {
+        "payment_trigger": {
+          "type": "string",
+          "enum": ["invoice_date", "acceptance_date", "delivery_date", "effective_date", "tbd"]
+        },
+        "payment_term_days": { "type": "integer", "minimum": 0, "maximum": 3650 },        
+        
+        "prepayment_percent": { "type": "integer", "minimum": 0, "maximum": 100 },
+
+        "prepayment_currency": { "type": ["string", "null"] },
+
+        "bank_details_included": { "type": "boolean" },
+        "withholding_allowed": { "type": "boolean" },
+        "suspension_right": { "type": "boolean" },
+        "bank_charges": { "type": "string", "enum": ["payer", "payee", "shared", "tbd"] },
+
+        "vat_mode": {
+          "type": "string",
+          "description": "v1 legacy location; in v2 prefer commercial.vat_mode",
+          "enum": ["inclusive", "exclusive_if_any", "exclusive", "not_applicable", "tbd"]
+        },
+
+        "late_payment_penalty_enabled": { "type": "boolean" },
+        "late_payment_penalty_rate": { "type": ["string", "null"] },
+
+        "payment_details": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "properties": {
+            "invoice_format": { "type": ["string", "null"] },
+            "supporting_documents": {
+              "type": ["array", "null"],
+              "items": { "type": "string", "minLength": 1 },
+              "minItems": 0
+            },
+            "partial_payments_allowed": { "type": ["boolean", "null"] },
+            "overpayment_rule": { "type": ["string", "null"] },
+            "disputed_amounts_rule": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+
+    "delivery": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "delivery_date_type",
+        "delivery_within_months",
+        "delivery_place",
+        "partial_shipments_allowed"
+      ],
+      "properties": {
+        "delivery_date_type": {
+          "type": "string",
+          "enum": ["within_days_from_effective", "within_days_from_po", "fixed_date", "tbd"]
+        },
+        "delivery_within_months": { "type": "integer", "minimum": 0, "maximum": 60 },
+        "delivery_place": { "type": "string", "minLength": 1 },
+        "partial_shipments_allowed": { "type": "boolean" },
+
+        "incoterms": { "type": ["string", "null"] },
+        "incoterms_version": { "type": ["string", "null"] },
+
+        "delivery_details": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "properties": {
+            "packaging_standard": { "type": ["string", "null"] },
+            "marking_standard": { "type": ["string", "null"] },
+            "carrier_selection": { "type": ["string", "null"] },
+            "loading_party": { "type": ["string", "null"] },
+            "unloading_party": { "type": ["string", "null"] },
+            "delivery_documents": {
+              "type": ["array", "null"],
+              "items": { "type": "string", "minLength": 1 },
+              "minItems": 0
+            },
+            "delivery_schedule_rule": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+
+    "acceptance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "acceptance_required": { "type": ["boolean", "null"] },
+        "acceptance_period_days": { "type": ["integer", "null"], "minimum": 0, "maximum": 3650 },
+        "acceptance_document": { "type": ["string", "null"], "enum": ["act", "Акт приемо-передачи",  "certificate", "protocol", "tbd", null] },
+        "acceptance_rules": { "type": ["string", "null"], "enum": ["strict", "mixed", "simplified", "tbd", null] },
+        "documents_required": {
+          "type": ["array", "null"],
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 0
+        },
+
+        "acceptance_details": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "properties": {
+            "inspection_scope": { "type": ["string", "null"] },
+            "defect_notice_method": { "type": ["string", "null"] },
+            "silent_acceptance_rule": { "type": ["string", "null"] },
+            "remedy_options": {
+              "type": ["array", "null"],
+              "items": { "type": "string", "minLength": 1 },
+              "minItems": 0
+            },
+            "remedy_time_days": { "type": ["integer", "null"], "minimum": 0, "maximum": 3650 }
+          }
+        }
+      }
+    },
+
+    "warranties": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "warranty_period_months": { "type": ["integer", "null"], "minimum": 0, "maximum": 240 },
+        "warranty_start": { "type": ["string", "null"], "enum": ["acceptance_date", "с даты приемки (подписания акта)",  "delivery_date", "commissioning_date", "tbd", null] },
+        "remedy": { "type": ["string", "null"], "enum": ["repair", "replace", "repair_or_replace", "refund", "tbd", null] },
+        "response_time_days": { "type": ["integer", "null"], "minimum": 0, "maximum": 3650 },
+
+        "warranty_details": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "properties": {
+            "covered_defects": { "type": ["string", "null"] },
+            "excluded_cases": {
+              "type": ["array", "null"],
+              "items": { "type": "string", "minLength": 1 },
+              "minItems": 0
+            },
+            "service_location": { "type": ["string", "null"] },
+            "spare_parts_rule": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+
+    "liability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "liability_cap_enabled",
+        "liability_cap_type",
+        "cap_scope",
+        "indirect_damages_excluded",
+        "exceptions_to_cap",
+        "delay_in_delivery_penalty_enabled",
+        "claim_notice_days"
+      ],
+      "properties": {
+        "liability_cap_enabled": { "type": "boolean" },
+        "liability_cap_type": { "type": "string", "enum": ["contract_price", "fixed_amount", "tbd"] },
+        "cap_scope": { "type": "string", "enum": ["aggregate", "per_event", "tbd"] },
+        "indirect_damages_excluded": { "type": "boolean" },
+        "exceptions_to_cap": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["fraud", "wilful_misconduct", "gross_negligence", "ip_infringement", "tbd"]
+          }
+        },
+        "delay_in_delivery_penalty_enabled": { "type": "boolean" },
+        "claim_notice_days": { "type": "integer", "minimum": 0, "maximum": 3650 },
+
+        "liability_details": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "properties": {
+            "general_rule": { "type": ["string", "null"] },
+
+            "delay_penalty": {
+              "type": ["object", "null"],
+              "additionalProperties": false,
+              "properties": {
+                "enabled": { "type": ["boolean", "null"] },
+                "rate": { "type": ["string", "null"] },
+                "one_time_fine_rate": { "type": ["string", "null"] },
+                "max_percent": { "type": ["string", "null"] }
+              }
+            },
+
+            "defective_goods_penalty": {
+              "type": ["object", "null"],
+              "additionalProperties": false,
+              "properties": {
+                "enabled": { "type": ["boolean", "null"] },
+                "fine_percent": { "type": ["string", "null"] }
+              }
+            },
+
+            "documents_delay_penalty": {
+              "type": ["object", "null"],
+              "additionalProperties": false,
+              "properties": {
+                "enabled": { "type": ["boolean", "null"] },
+                "fine_amount_per_day": { "type": ["string", "null"] }
+              }
+            },
+
+            "penalty_payment_procedure": { "type": ["string", "null"] },
+            "penalty_no_release_clause": { "type": ["boolean", "null"] },
+            "claim_procedure_notes": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+
+    "legal": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "governing_law": { "type": ["string", "null"], "minLength": 2 },
+        "dispute_resolution": { "type": ["string", "null"], "enum": ["state_court", "суды общей юрисдикции", "arbitration", "negotiation_then_court", "tbd", null] },
+        "court_place": { "type": ["string", "null"] },
+        "arbitration_seat": { "type": ["string", "null"] },
+        "force_majeure_notice_days": { "type": ["integer", "null"], "minimum": 0, "maximum": 3650 },
+
+        "legal_details": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "properties": {
+            "pretrial_negotiation": { "type": ["boolean", "null"] },
+            "pretrial_term_days": { "type": ["integer", "null"], "minimum": 0, "maximum": 3650 }
+          }
+        }
+      }
+    }
+  }
+}

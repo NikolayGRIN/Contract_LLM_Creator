@@ -1,0 +1,28 @@
+ATTEMPT: 1/3
+ERROR: loop_like_repeated_starts
+
+5.1. The delivery term is 6 months from the agreed triggering event.
+5.2. Delivery shall take place in Mumbai.
+5.3. Partial shipments are not allowed.
+5.4. Risk of loss or damage to the goods passes upon delivery to the Buyer at the delivery point.
+5.5. Standard delivery and acceptance documents will be provided by the Supplier.
+5.6. The goods must be delivered in customarily packaged condition unless otherwise specified.
+5.7. The risk does not pass if the shipment is delayed at the request of the Buyer or due to default in acceptance, but only with notice of readiness for shipment.
+5.8. The Supplier shall insure the goods against transport damages only upon written instruction and on account of the Buyer.
+5.9. For separate partial deliveries, the risk passes when the first freight carrier takes possession of the goods.
+5.10. If the Seller has borne the forwarding charges, the risk passes with the handover to the first freight carrier or forwarding agent.
+5.11. The Supplier shall ensure that the transport packaging is suitable for the nature and weight of the goods without being excessively heavy.
+5.12. Selling packaging will not be returned by the Supplier unless specifically requested in writing by the Buyer.
+5.13. Re-packaging of the goods, if required, shall be at the expense of the Buyer.
+5.14. The risk does not pass to the Buyer until the goods are actually delivered and accepted as per standard delivery documents.
+5.15. If any part of the goods is damaged or lost during transit, the Supplier shall be responsible for replacement within 30 days from the date of acceptance.
+5.16. Any claims for damage or loss must be made in writing to the Supplier within 7 days after receipt of the goods.
+5.17. The Buyer shall arrange for the disposal of packaging at its own expense upon delivery.
+5.18. If the goods are not accepted by the Buyer within the acceptance period, the risk passes with notice of refusal.
+5.19. The Supplier reserves the right to ship the goods in one consignment or multiple partial shipments as deemed necessary by the Supplier.
+5.20. The Supplier shall ensure that all packaging materials used meet applicable regulations and standards.
+5.21. Any claims for non-conformity with Incoterms CIF 2020 must be made within 3 days of delivery.
+5.22. If the goods are not received at the agreed time, the risk passes upon notice of readiness for shipment by the Supplier.
+5.23. The Buyer shall inspect the goods immediately upon receipt and notify the Supplier in writing of any discrepancies or damages found.
+5.24. The Supplier shall be responsible for rectifying any defects within 1 month from the date of acceptance, subject to the warranty terms.
+5.25. The risk does not pass if the Buyer fails to take delivery as per the agreed schedule without justifiable cause.

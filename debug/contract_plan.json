@@ -1,0 +1,28 @@
+{
+  "contract_type": "supply",
+  "language_mode": "ru",
+  "ordered_sections": [
+    "definitions",
+    "subject_of_contract",
+    "price_and_taxes",
+    "payment_terms",
+    "delivery_terms",
+    "acceptance_and_inspection",
+    "warranties",
+    "liability_and_penalties",
+    "force_majeure",
+    "governing_law_and_disputes"
+  ],
+  "generation_policy": {
+    "top_k": 7,
+    "max_attempts": 3,
+    "retrieval_enabled_now": {
+      "payment_terms": true,
+      "delivery_terms": true
+    },
+    "retrieval_fallback_later": {
+      "acceptance_and_inspection": true,
+      "liability_and_penalties": true
+    }
+  }
+}
