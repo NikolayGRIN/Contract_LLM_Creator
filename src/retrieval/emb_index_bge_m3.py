@@ -191,7 +191,7 @@ def main() -> int:
     ap.add_argument("--no_suppress_stderr", action="store_true", help="show llama.cpp stderr")
 
     # chunking
-    ap.add_argument("--chunk_tokens", type=int, default=512)
+    ap.add_argument("--chunk_tokens", type=int, default=256)
     ap.add_argument("--chunk_overlap", type=int, default=64)
 
     args = ap.parse_args()
