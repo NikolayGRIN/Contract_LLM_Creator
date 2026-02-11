@@ -137,7 +137,7 @@ Contract LLM Creator — это offline-пайплайн для работы с 
 
 
 Ключевые модули:
-- `run_generate.py`
+- `run_generate.py` ("оркестратор", находится в корневой папке)
 - `src/generation/*`
 
 6. Экспериментальные результаты
